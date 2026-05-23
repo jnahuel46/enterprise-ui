@@ -52,8 +52,23 @@ C => Code Example
     - Bazel - Q
     - Turborepo Builds - Q
     - Partial Rebuilds - Q
-
-
+    - Turborepos Graph - Q
+    - Island Architecture 
+        - What is island architecture - Q
+        - Why do we need it - Q
+        - How do we implement it - Q
+    - Islands vs Microfrontends - Use When & Avoid When - Q
+        - Module Federation (runtime composition)
+        - Build Time (monorepo packages)
+        - Islands (selective hydratation)
+    - Server Side Rendering vs Islands - Q
+    - Backend for Frontend - Q
+    - Dependency Management with pnpm- Q
+- Scaling Typescript- Q
+    - Common Ts Challengues
+    - Ts Diagnostics Exercise
+    - Project References & Configs
+    - Ts References Exercise
 
 
 
@@ -62,3 +77,4 @@ C => Code Example
 
 Out of the box question
 - AWS - What happens to an SQS message when a Lambda fails - Q
+- como estructurarias un proyecto backend?
