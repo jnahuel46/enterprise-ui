@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Graph</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/viz.js@2.1.2-pre.1/viz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/viz.js@2.1.2-pre.1/full.render.js"></script>
+  <script>
+const s = "\ndigraph {\n\tcompound = \"true\"\n\tnewrank = \"true\"\n\tsubgraph \"root\" {\n\t\t\"[root] @pulse/analytics#build\" -\u003E \"[root] @pulse/shared#build\"\n\t\t\"[root] @pulse/analytics#build\" -\u003E \"[root] @pulse/ui#build\"\n\t\t\"[root] @pulse/codemods#build\" -\u003E \"[root] ___ROOT___\"\n\t\t\"[root] @pulse/dashboard#build\" -\u003E \"[root] @pulse/analytics#build\"\n\t\t\"[root] @pulse/dashboard#build\" -\u003E \"[root] @pulse/mocks#build\"\n\t\t\"[root] @pulse/dashboard#build\" -\u003E \"[root] @pulse/shared#build\"\n\t\t\"[root] @pulse/dashboard#build\" -\u003E \"[root] @pulse/ui#build\"\n\t\t\"[root] @pulse/dashboard#build\" -\u003E \"[root] @pulse/users#build\"\n\t\t\"[root] @pulse/legacy#build\" -\u003E \"[root] @pulse/mocks#build\"\n\t\t\"[root] @pulse/mocks#build\" -\u003E \"[root] @pulse/shared#build\"\n\t\t\"[root] @pulse/shared#build\" -\u003E \"[root] ___ROOT___\"\n\t\t\"[root] @pulse/ui#build\" -\u003E \"[root] @pulse/shared#build\"\n\t\t\"[root] @pulse/users#build\" -\u003E \"[root] @pulse/shared#build\"\n\t\t\"[root] @pulse/users#build\" -\u003E \"[root] @pulse/ui#build\"\n\t}\n}\n\n".replace(/\_\_\_ROOT\_\_\_/g, "Root").replace(/\[root\]/g, "");new Viz().renderSVGElement(s).then(el => document.body.appendChild(el)).catch(e => console.error(e));
+  </script>
+</body>
+</html>
