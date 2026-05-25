@@ -94,11 +94,17 @@ C => Code Example
         - Custom Rules - Q
     - Custom ESLint rules
     - Architectural Linting Exercises
--CI & CD - Q
+- CI & CD - Q
     - Githuib Action Patterns
     - The Monorepo CI Problem
     - Performance Budge as Constraints
         - Initial JS Bundle - Route level chunk - Third party js - LCP target
+    - Github Actions Exampoles - C
+- Testing Strategies - Q
+    - Mock Service Workers
+        - MSW can mock service workers at build and run time - Q
+    - Monitoring & Observability
+    - Agentic Workflows Q&A
     
 
 
