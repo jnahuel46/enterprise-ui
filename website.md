@@ -65,10 +65,41 @@ C => Code Example
     - Backend for Frontend - Q
     - Dependency Management with pnpm- Q
 - Scaling Typescript- Q
-    - Common Ts Challengues
-    - Ts Diagnostics Exercise
-    - Project References & Configs
-    - Ts References Exercise
+    - Common Ts Challengues - Q
+        - Oversized program
+        - Barrel Imports
+        - Complex types
+        - Anonimouse exports,etc 
+    - Ts Diagnostics Exercise - Q
+        - Measure first (run diagnostics)
+        - tsc -p tsconfig.json --extendedDiagnostics
+        - tsc -p tsconfig.json --listFilesOnly
+        - tsc -p tsconfig.json --explainFiles > explain.txt
+        - tsc -p tsconfig.json --traceResolution > resolution.txt
+        - tsc -p tsconfig.json --generateTrace .trace --incremental false
+    - Project References & Configs - C
+        - Compiler Options - Q
+        - Declaration - outDir - rootDir - What they do?
+        - What is composite:true ? - Q
+        - You could have per-project tsconfig.json files and have them reference each other - Q
+        - Also you could have extended configs to setup defaults and then override them in the individual projects - Q
+        - Project references are a great way to speed up incremental builds - Q
+        - tsconfig.base.json - C
+    - Ts References Exercise - Q
+- ESLint as Architectural Guardrails - Q
+    - Enforcing Architecture Rules with ESLint - Q
+        - Import Boundaries - Q
+        - Banned Dependencies - Q
+        - No relative Imports - Q
+        - Custom Rules - Q
+    - Custom ESLint rules
+    - Architectural Linting Exercises
+-CI & CD - Q
+    - Githuib Action Patterns
+    - The Monorepo CI Problem
+    - Performance Budge as Constraints
+        - Initial JS Bundle - Route level chunk - Third party js - LCP target
+    
 
 
 
